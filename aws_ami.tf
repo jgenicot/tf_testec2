@@ -3,13 +3,9 @@ data "aws_ami" "amazon-linux-2" {
 
 
  filter {
-   name   = "owner-alias"
-   values = ["amazon"]
- }
-
-
- filter {
    name   = "name"
    values = ["amzn2-ami-hvm*"]
  }
+ 
+ owners = ["137112412989"] # amazon
 }
